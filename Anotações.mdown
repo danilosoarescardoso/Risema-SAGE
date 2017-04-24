@@ -1,0 +1,12 @@
+
+# Alterações a serem feitas
+* colocar Admin e logout na barra da esquerda
+* usar datepicker range
+* inserir e-mail de ajuda no rodapé do site
+
+
+
+# O que falta fazer
+* página de login
+* página perfil (alterar senha e e-mail)
+* 

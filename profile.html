@@ -1,0 +1,180 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>RISEMA - Sistema SAGE</title>
+    <meta name="generator" content="RISEMA" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- script references -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/boostrap.min.js"></script>  
+    <script src="js/dropdown.js"></script> 
+
+    <!-- Include Required Prerequisites -->
+    <script type="text/javascript" src="js/moment.min.js"></script>
+
+    <!-- Include Date Range Picker -->
+    <script type="text/javascript" src="js/daterangepicker.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/daterangepicker.css" />
+
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/login.css" rel="stylesheet">
+
+    <style type="text/css">
+      .navbar-inverse {
+        background-color: #fff;
+        border-color: #05A3E0;
+      }
+
+      .navbar-inverse .navbar-nav li a:hover{
+        color:#000;
+      }
+    </style>
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+      <![endif]-->
+
+
+      <link href="css/styles.css" rel="stylesheet">
+
+      <script type="text/javascript">
+
+        $( document ).ready(function() { 
+
+          $('input,textarea').focus(function(){
+               $(this).removeAttr('placeholder');
+            });
+
+         $("#editmail").click(function(){
+          $("#mailfield").prop("disabled", false);
+        });
+
+          $("#editpswd").click(function(){
+           $("#pswdfield").prop("disabled", false);
+         });
+
+      });
+
+    </script>
+
+
+  </head>
+  <body>
+    <div id="top-nav" class="navbar navbar-inverse navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="index.html"><img src="img/logo.png" width="100px"></a>
+        </div>
+
+      </div><!-- /container -->
+    </div>
+    <!-- /Header -->
+
+    <!-- Main -->
+    <div class="container">
+
+     <!-- left menu -->
+     <div class="row" style="height: 550px">
+
+       <div class="col-sm-3">
+         <!-- left -->
+         <h3><i class="glyphicon glyphicon-menu-hamburger"></i> Menu</h3>
+         <hr>
+
+         <ul class="nav nav-stacked">
+           <li><a href="index.html" target="_self"><i class="glyphicon glyphicon-list"></i> Extrato</a></li>
+           <li><a href="profile.html" target="_self"><i class="glyphicon glyphicon-user"></i> Configurações</a></li>
+           <li><a href="login.html" target="_self"><i class="glyphicon glyphicon-off"></i> Logout</a></li>
+
+         </ul>
+
+         <hr>
+
+       </div>
+
+
+       <div id="passwordreset"  class="mainbox col-md-7">
+        <div class="panel panel-info">
+          <div class="panel-heading">
+            <div class="panel-title">Alterar dados cadastrais</div>
+          </div>                     
+          <div class="panel-body">
+            <form id="signupform" class="form-horizontal" role="form">
+              <div class="form-group">
+                <label for="email" class=" control-label col-sm-3">E-mail</label>
+
+                <div class="col-sm-9">
+                  <input type="text" id="mailfield" class="form-control" name="email" value="teste@teste.com" disabled=""><br>
+                  <a id="editmail"><a>editar e-mail</a></p>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="cnmail" class=" control-label col-sm-3">Confirmar novo e-mail</label>
+                <div class="col-sm-9">
+                  <input type="password" class="form-control" name="new_email_confirmation" placeholder="confirmar novo e-mail">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="email" class=" control-label col-sm-3">Palavra-passe</label>
+
+                <div class="col-sm-9">
+                  <input type="password" id="pswdfield" class="form-control" name="password" value="**********" disabled="">
+                  <p id="editpswd"><a>editar palavra-passe</a></p>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="email" class=" control-label col-sm-3">Confirmar Palavra-passe</label>
+                <div class="col-sm-9">
+                  <input type="password" class="form-control" name="password_confirmation" placeholder="confirmar nova palavra-passe">
+                </div>
+              </div>
+              <div class="form-group">
+                <!-- Button -->                                 
+                <div class="  col-sm-offset-3 col-sm-9">
+                  <button id="btn-signup" type="button" class="btn btn-success" >Enviar</button>
+                </div>
+              </div>                             
+            </form>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div><!--/row-->
+  <!-- /upper section -->
+
+
+  <!-- /Main -->
+
+  <div class="modal" id="addWidgetModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+          <h4 class="modal-title">Add Widget</h4>
+        </div>
+        <div class="modal-body">
+          <p>Add a widget stuff here..</p>
+        </div>
+        <div class="modal-footer">
+          <a href="#" class="btn">Close</a>
+          <a href="#" class="btn btn-primary">Save changes</a>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dalog -->
+  </div><!-- /.modal -->
+
+  <footer class="text-center">RISEMA ... Soluções em Informática, Comunicações & Internet © Webdesign by: <a href="http://www.risema.pt/">risema.pt </a></footer>
+
+
+</body>
+</html>
